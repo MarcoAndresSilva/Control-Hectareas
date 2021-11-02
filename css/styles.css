@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Prompt',
+    sans-serif;
+}
+
+.imagen-header {
+  width: 60%;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+.item {
+  cursor: pointer;
+  width: 20%;
+}
+
+.item img {
+  width: 50%;
+}
+
+.leyda-info,
+.lilenes-info,
+.tricao-info,
+.el-capricho {
+  font-size: 1rem;
+  font-weight: 500;
+  border: 2px solid;
+}
+
+#patadeldiablo button,
+#elbosque button,
+#loscarneros button,
+#elpeumo button,
+#ariztia button,
+#sector1 button,
+#sector2 button,
+#sector3 button,
+#pajarera button,
+#limones button {
+  font-size: 0.8rem;
+  width: 100px;
+  height: 100px;
+  line-height: 25px;
+  border-radius: 50%
+}
+
+.lead-button {
+  /* font-size: 0.8rem; */
+}
+
+.bagde-ha{
+  font-size: 0.8rem;
+}
+
+/* Responsive  */
+
+@media(max-width: 650px) {
+  .contenedor-logo {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
+
+  .title{
+    font-size: 3rem;
+    /* padding:  0 1rem 0 1rem; */
+  }
+  .subtitle{
+    font-size: 2rem;
+  }
+  .bordecito{
+    padding: 0.5rem !important;
+  }
+  .leyda-info,
+  .lilenes-info {
+    font-size: 0.8rem;
+  }
+  .btn .btn-primary{
+    font-size: 0.8rem;
+  }
+}

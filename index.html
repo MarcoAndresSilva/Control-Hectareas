@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- bootstrap css
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+
+  <!-- Bootstrap CSS  Usare BootsWatch para los colores-->
+  <link rel="stylesheet" href="js/bootstrap.min.quartz.css">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- iconos FontAwesome -->
+  <script src="https://kit.fontawesome.com/8c2e7c40ab.js" crossorigin="anonymous"></script>
+
+  <!-- font Poppins  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>Control de Hectareas</title>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+
+    <!-- header start  -->
+    <div class="header_main">
+      <div class="row g-0">
+        <!-- col 6 columnas  -->
+        <!-- <div class="col-lg-6 col-md-6 text-center">
+          <img src="img/sprayer.png" class="rounded imagen-header mt-3 px-4" alt="">
+        </div> -->
+
+        <div class="col-lg-6 col-md-6 text-center m-auto">
+          <div class="mt-4 px-3 contenedor-logo">
+            <img src="img/logo2.jpg" class="rounded img-thumbnail" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- header end  -->
+
+    <!-- Fundos Actuales star -->
+    <div class="fundos_actuales">
+      <div class="row">
+        <div class="mt-3 py-2 text-white text-center text-effect">
+          <h1 class="title" data-text="Neon" contenteditable="">Control Semanal de Hectáreas</h1>
+        </div>
+
+        <div class="py-1 text-white text-center">
+          <h2 class="subtitle">Fundos Actuales</h4>
+        </div>
+
+        <div class="col-lg-12 col-md-12 mt-3">
+          <div class="d-flex flex-row text-white justify-content-around text-center">
+            <button class="btn item p-2 btn-primary" data-bs-toggle="collapse" data-bs-target="#valle-leyda">
+              <i class="fas fa-seedling  d-block"></i>
+              <span class="d-none d-sm-block">Valle Leyda</span>
+            </button>
+            <button class="btn item p-2 btn-warning" data-bs-toggle="collapse" data-bs-target="#lilenes">
+              <i class="fas fa-seedling  d-block"></i>
+              <span class="d-none d-sm-block">Lilenes</span>
+            </button>
+            <button class="btn item p-2 btn-success" data-bs-toggle="collapse" data-bs-target="#tricao">
+              <i class="fas fa-seedling  d-block"></i>
+              <span class="d-none d-sm-block">Tricao</span>
+            </button>
+            <button class="btn item p-2 btn-danger" data-bs-toggle="collapse" data-bs-target="#el-capricho">
+              <i class="fas fa-seedling d-block"></i>
+              <span class="d-none d-sm-block">El Capricho</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fundos actuales end  -->
+
+    <!-- valle leyda start -->
+    <div id="valle-leyda" class="collapse show mt-2">
+      <div class="card card-body text-white text-center py-2 my-2">
+        <h2 class="subtitle text-primary">Valle Leyda</h2>
+        <div class="d-flex flex-wrap justify-content-around">
+          <p class="bordecito lead text-dark p-2 rounded border-primary leyda-info">Total de Hectáreas: <span
+              class="strong">417.84</span></p>
+          <p class="bordecito lead text-dark p-2 rounded border-primary leyda-info">Administrador: <span
+              class="strong">Diego
+              Roa</span></p>
+          <p class="bordecito lead text-dark p-2 rounded border-primary leyda-info">Jefe de campo: <span
+              class="strong">Cristian</span>
+          </p>
+          <p class="bordecito lead text-dark p-2 rounded border-primary leyda-info">Fono: <span class="strong">+569
+              85257887</span></p>
+        </div>
+      </div>
+      <div class="card bg-secondary my-2">
+        <div class="row row-cols-1 row-cols-md-2 g-1">
+          <div class="col">
+            <div class="card">
+              <div class="card-header">
+                <div class="text-center">
+                  <button class="btn btn-lg btn-primary w-50" data-bs-toggle="collapse" data-bs-target="#elpeumo"
+                    type="button">El Peumo
+                    <p class="text-white"><span class="badge bg-info">Total Ha: 85.22</span></p></button>
+                </div>
+              </div>
+              <div id="elpeumo" class="collapse">
+                <div class="row text-center p-2">
+                  <div class="col-4">
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 1
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">15.1</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 2
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">13.9</span></p>
+                  </div>
+                  <div class="col-4">
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 3
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">10.68</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 4
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">13.4</span></p>
+                    </button>
+                  </div>
+                  <div class="col-4">
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 5
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">9.14</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Replante
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">23</span></p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-header">
+                <div class="text-center">
+                  <button class="btn btn-lg btn-primary w-50" data-bs-toggle="collapse" data-bs-target="#patadeldiablo"
+                    type="button">Pata del Diablo
+                    <p class="text-white"><span class="badge bg-info">Total Ha: 109.1</span></p></button>
+                </div>
+              </div>
+              <div id="patadeldiablo" class="collapse">
+                <div class="row text-center p-2">
+                  <div class="col-4">
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 7
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">0.91</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 8
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">1.48</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 9
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">1.46</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 10
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">1.46</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 11
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">2.3</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 12
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">1.49</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 13
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">1.36</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 14
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">1.43</span></p>
+                    </button>
+                  </div>
+                  <div class="col-4">
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 15
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">7.72</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 16
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">6.54</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 17
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">5.62</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 18
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">7.02</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 19
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">6.67</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 20
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">6.3</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 21
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">9.53</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 22
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">6.75</span></p>
+                    </button>
+
+                  </div>
+                  <div class="col-4">
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 23
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">6.29</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 24
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">5.94</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 25
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">5.32</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 26
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">5.52</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 27
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">6.15</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 28
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">3.36</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 29 RE
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">4.01</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 30
+                      <p class="text-white">Ha: <span
+                          class="strong badge badge-ha bg-info mt-1 badge badge-ha bg-info">4.47</span></p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-header">
+                <div class="text-center">
+                  <button class="btn btn-lg btn-primary w-50" data-bs-toggle="collapse" data-bs-target="#elbosque"
+                    type="button">El Bosque
+                    <p class="text-white"><span class="badge bg-info">Total Ha: 114.48</span></p>
+                  </button>
+                </div>
+              </div>
+              <div id="elbosque" class="collapse">
+                <div class="row text-center p-2">
+                  <div class="col-4">
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 31
+                      <p class="text-white">Ha: <span class="strong badge  mt-1 badge-ha bg-info">4.19</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 32
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">4.32</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 33
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">3.67</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 34
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">3.76</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 35
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">3.45</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 36
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">4.06</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 37
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">4.42</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 38
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">4.12</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Puchos
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">5.4</span></p>
+                    </button>
+                  </div>
+                  <div class="col-4">
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 39
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">5.15</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 40
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">4.89</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 41
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">4.78</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 42
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">5.15</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 43
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">5.32</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 44
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">5.05</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 45
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">4.03</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 46
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">5.67</span></p>
+                    </button>
+
+                  </div>
+                  <div class="col-4">
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 47
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">4.63</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 48
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">4.3</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 49
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">4.44</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 50
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">4.4</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 51
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">5.14</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 52
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">4.82</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 53
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">4.7</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 54
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">4.6</span></p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-header">
+                <div class="text-center">
+                  <button class="btn btn-lg btn-primary w-50" data-bs-toggle="collapse" data-bs-target="#loscarneros"
+                    type="button">Los Carneros
+                    <p class="text-white"><span class="badge bg-info">Total Ha: 94.04</span></p>
+                  </button>
+                </div>
+              </div>
+              <div id="loscarneros" class="collapse">
+                <div class="row text-center p-2">
+                  <div class="col-4">
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 55
+                      <p class="text-white">Ha: <span class="strong badge  mt-1 badge-ha bg-info">4.9</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 56
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">4.8</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 57
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">4.9</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 58
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">4.85</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 59
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">4.66</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 60
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">5.12</span></p>
+                    </button>
+
+                  </div>
+                  <div class="col-4">
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 61
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">5</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 62
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">6.24</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 63
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">5.98</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 64
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">6.53</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 65
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">6.33</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 66
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">6.24</span></p>
+                    </button>
+                  </div>
+                  <div class="col-4">
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 67
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">6.18</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 68
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">6.3</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 69
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">6.5</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 70
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">4.75</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 71
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">4.76</span></p>
+                    </button>
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 51
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">5.14</span></p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-header">
+                <div class="text-center">
+                  <button class="btn btn-lg btn-primary w-50" data-bs-toggle="collapse" data-bs-target="#ariztia"
+                    type="button">Ariztia
+                    <p class="text-white"><span class="badge bg-info">Total Ha: 15</span></p></button>
+                </div>
+              </div>
+              <div id="ariztia" class="collapse">
+                <div class="row text-center p-2">
+                  <div class="col-4">
+                    <button class="btn btn-primary lh-1 pt-2 mb-1" name="data-number">Corte 1
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">15.</span></p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- valle leyda end  -->
+
+    <!-- Lilenes start -->
+    <div id="lilenes" class="collapse mt-2">
+      <div class="card card-body text-white text-center py-2 my-2">
+        <h2 class="subtitle text-warning">Los Lilenes</h2>
+        <div class="d-flex flex-wrap justify-content-around">
+          <p class="bordecito lead text-dark p-2 rounded border-warning lilenes-info">Total de Hectáreas: <span
+              class="strong">300</span></p>
+          <p class="bordecito lead text-dark p-2 rounded border-warning lilenes-info">Administrador: <span
+              class="strong">Sergio</span></p>
+          <p class="bordecito lead text-dark p-2 rounded border-warning lilenes-info">Jefe de campo: <span
+              class="strong">Ramon
+              Gazu</span>
+          </p>
+          <p class="bordecito lead text-dark p-2 rounded border-warning lilenes-info">Fono: <span class="strong">+569
+              12345678</span></p>
+        </div>
+      </div>
+      <div class="card bg-secondary my-2">
+        <div class="row row-cols-1 row-cols-md-2 g-1">
+          <div class="col">
+            <div class="card">
+              <div class="card-header">
+                <div class="text-center">
+                  <button class="btn btn-lg btn-warning w-50" data-bs-toggle="collapse" data-bs-target="#sector1"
+                    type="button">Sector 1
+                   <p class="text-white"><span class="badge bg-info">Total Ha: 54.4</span></p></button>
+                </div>
+              </div>
+              <div id="sector1" class="collapse">
+                <div class="row text-center p-2">
+                  <div class="col-4">
+                    <button class="btn btn-warning lh-1 pt-2 mb-1" name="data-number">Corte 1
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1 mt-1">0.91</span></p>
+                    </button>
+                    <button class="btn btn-warning lh-1 pt-2 mb-1" name="data-number">Corte 2
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">1.48</span></p>
+                    </button>
+                    <button class="btn btn-warning lh-1 pt-2 mb-1" name="data-number">Corte 3
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">1.46</span></p>
+                    </button>
+                  </div>
+                  <div class="col-4">
+                    <button class="btn btn-warning lh-1 pt-2 mb-1" name="data-number">Corte 4
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">7.72</span></p>
+                    </button>
+                    <button class="btn btn-warning lh-1 pt-2 mb-1" name="data-number">Corte 5
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">6.54</span></p>
+                    </button>
+                    <button class="btn btn-warning lh-1 pt-2 mb-1" name="data-number">Corte 6
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">5.62</span></p>
+                    </button>
+                  </div>
+                  <div class="col-4">
+                    <button class="btn btn-warning lh-1 pt-2 mb-1" name="data-number">Corte 7
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">6.29</span></p>
+                    </button>
+                    <button class="btn btn-warning lh-1 pt-2 mb-1" name="data-number">Corte 8
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">5.94</span></p>
+                    </button>
+                    <button class="btn btn-warning lh-1 pt-2 mb-1" name="data-number">Corte 9
+                      <p class="text-white">Ha: <span class="strong badge badge-ha bg-info mt-1">5.32</span></p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-header">
+                <div class="text-center">
+                  <button class="btn btn-lg btn-warning w-50" data-bs-toggle="collapse" data-bs-target="#sector2"
+                    type="button">Sector 2
+                   <p class="text-white"><span class="badge bg-info">Total Ha: 35.5</span></p></button>
+                </div>
+              </div>
+              <div id="sector2" class="collapse">
+                <div class="row text-center p-2">
+                  <div class="col-4">
+                    <button class="btn btn-warning lh-1 pt-2 mb-1" name="data-number">Corte 10
+                      <p class="text-white">Ha: <span
+                          class="strong badge badge-ha bg-info mt-1 badge badge-ha bg-info mt-1">0.91</span></p>
+                    </button>
+                    <button class="btn btn-warning lh-1 pt-2 mb-1" name="data-number">Corte 11
+                      <p class="text-white">Ha: <span
+                          class="strong badge badge-ha bg-info mt-1 badge badge-ha bg-info">1.48</span></p>
+                    </button>
+                    <button class="btn btn-warning lh-1 pt-2 mb-1" name="data-number">Corte 12
+                      <p class="text-white">Ha: <span
+                          class="strong badge badge-ha bg-info mt-1 badge badge-ha bg-info">1.46</span></p>
+                    </button>
+                  </div>
+                  <div class="col-4">
+                    <button class="btn btn-warning lh-1 pt-2 mb-1" name="data-number">Corte 13
+                      <p class="text-white">Ha: <span
+                          class="strong badge badge-ha bg-info mt-1 badge badge-ha bg-info">7.72</span></p>
+                    </button>
+                    <button class="btn btn-warning lh-1 pt-2 mb-1" name="data-number">Corte 14
+                      <p class="text-white">Ha: <span
+                          class="strong badge badge-ha bg-info mt-1 badge badge-ha bg-info">6.54</span></p>
+                    </button>
+                    <button class="btn btn-warning lh-1 pt-2 mb-1" name="data-number">Corte 15
+                      <p class="text-white">Ha: <span
+                          class="strong badge badge-ha bg-info mt-1 badge badge-ha bg-info">5.62</span></p>
+                    </button>
+                  </div>
+                  <div class="col-4">
+                    <button class="btn btn-warning lh-1 pt-2 mb-1" name="data-number">Corte 16
+                      <p class="text-white">Ha: <span
+                          class="strong badge badge-ha bg-info mt-1 badge badge-ha bg-info">6.29</span></p>
+                    </button>
+                    <button class="btn btn-warning lh-1 pt-2 mb-1" name="data-number">Corte 17
+                      <p class="text-white">Ha: <span
+                          class="strong badge badge-ha bg-info mt-1 badge badge-ha bg-info">5.94</span></p>
+                    </button>
+                    <button class="btn btn-warning lh-1 pt-2 mb-1" name="data-number">Corte 18
+                      <p class="text-white">Ha: <span
+                          class="strong badge badge-ha bg-info mt-1 badge badge-ha bg-info">5.32</span></p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Lilenes end  -->
+
+     <!-- Tricao start -->
+    <div id="tricao" class="collapse mt-2">
+      <div class="card card-body text-white text-center py-2 my-2">
+        <h2 class="subtitle text-success">EL TRICAO</h2>
+        <div class="d-flex flex-wrap justify-content-around">
+          <p class="bordecito lead text-dark p-2 rounded border-success tricao-info">Total de Hectáreas: <span
+              class="strong">500.65</span></p>
+          <p class="bordecito lead text-dark p-2 rounded border-success tricao-info">Administrador: <span
+              class="strong">Sergio</span></p>
+          <p class="bordecito lead text-dark p-2 rounded border-success tricao-info">Jefe de campo: <span
+              class="strong">Jose
+              </span>
+          </p>
+          <p class="bordecito lead text-dark p-2 rounded border-success tricao-info">Fono: <span class="strong">+569
+              12345678</span></p>
+        </div>
+      </div>
+      <div class="card bg-secondary my-2">
+        <div class="row row-cols-1 row-cols-md-2 g-1">
+          <div class="col">
+            <div class="card">
+              <div class="card-header">
+                <div class="text-center">
+                  <button class="btn btn-lg btn-success w-50" data-bs-toggle="collapse" data-bs-target="#pajarera"
+                    type="button">Pajarera
+                   <p class="text-white"><span class="badge bg-info">Total Ha: 54.4</span></p></button>
+                </div>
+              </div>
+              <div id="pajarera" class="collapse">
+                <div class="row text-center p-2">
+                  <div class="col-4">
+                    <button class="btn btn-success lh-1 pt-2 mb-1" name="data-number">Corte 1
+                      <p class="text-white">Ha: <span class="strong badge bagde-ha bg-info mt-1 mt-1">0.91</span></p>
+                    </button>
+                    <button class="btn btn-success lh-1 pt-2 mb-1" name="data-number">Corte 2
+                      <p class="text-white">Ha: <span class="strong badge bagde-ha bg-info mt-1">1.48</span></p>
+                    </button>
+                  </div>
+                  <div class="col-4">
+                    <button class="btn btn-success lh-1 pt-2 mb-1" name="data-number">Corte 4
+                      <p class="text-white">Ha: <span class="strong badge bagde-ha bg-info mt-1">7.72</span></p>
+                    </button>
+                    <button class="btn btn-success lh-1 pt-2 mb-1" name="data-number">Corte 5
+                      <p class="text-white">Ha: <span class="strong badge bagde-ha bg-info mt-1">6.54</span></p>
+                    </button>
+                  </div>
+                   <div class="col-4">
+                    <button class="btn btn-success lh-1 pt-2 mb-1" name="data-number">Corte 4
+                      <p class="text-white">Ha: <span class="strong badge bagde-ha bg-info mt-1">7.72</span></p>
+                    </button>
+                    <button class="btn btn-success lh-1 pt-2 mb-1" name="data-number">Corte 5
+                      <p class="text-white">Ha: <span class="strong badge bagde-ha bg-info mt-1">6.54</span></p>
+                    </button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+            <div class="card">
+              <div class="card-header">
+                <div class="text-center">
+                  <button class="btn btn-lg btn-success w-50" data-bs-toggle="collapse" data-bs-target="#limones"
+                    type="button">Limones
+                   <p class="text-white"><span class="badge bg-info">Total Ha: 35.5</span></p></button>
+                </div>
+              </div>
+              <div id="limones" class="collapse">
+                <div class="row text-center p-2">
+                  <div class="col-4">
+                    <button class="btn btn-success lh-1 pt-2 mb-1" name="data-number">Corte 10
+                      <p class="text-white">Ha: <span
+                          class="strong badge bagde-ha bg-info mt-1 mt-1">0.91</span></p>
+                    </button>
+                  </div>
+                  <div class="col-4">
+                    <button class="btn btn-success lh-1 pt-2 mb-1" name="data-number">Corte 13
+                      <p class="text-white">Ha: <span
+                          class="strong badge bagde-ha bg-info mt-1">7.72</span></p>
+                    </button>
+                  </div>
+                  <div class="col-4">
+                    <button class="btn btn-success lh-1 pt-2 mb-1" name="data-number">Corte 16
+                      <p class="text-white">Ha: <span
+                          class="strong badge bagde-ha bg-info mt-1">6.29</span></p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <!-- Tricao end  -->
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+
+  <!-- Jquery  -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+  <script type="text/javascript" src="js/mian.js"></script>
+
+
+</body>
+
+</html>
