@@ -87,4 +87,7 @@ body {
   .btn .btn-primary{
     font-size: 0.8rem;
   }
+  .badge{
+  font-size:0.7rem;
+  }
 }
